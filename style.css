@@ -1,0 +1,54 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #021340;
+}
+
+body{
+    text-align: center;
+    background-image: url(img/imc-fond.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label{
+    font-weight: bolder;
+}
+
+input{
+    height: 30px;
+}
+
+#btn{
+    height: 30px;
+    border-radius: 10px;
+}
+
+#result{
+    font-size: larger;
+    color:brown;
+}
+
+.imc, #result{
+    font-weight: bolder;
+}
+
+.left{
+    width: 120px;
+    height: 30px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.right{
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.tableau{
+    
+    display: flex;
+    justify-content: center;
+}

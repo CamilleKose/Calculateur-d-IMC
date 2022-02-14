@@ -1,15 +1,18 @@
 // Calculateur IMC //
 
-let poids = prompt('Quel est votre poids ?');
-let taille = prompt('Quelle est votre taille en cm ?')
+let btn = document.getElementById('btn');
 
-function calculImc(poids, taille){
+btn.addEventListener('click', ()=> {
+    
+    let poids = document.getElementById('poids').value;
+    let taille = document.getElementById('taille').value;
+    let result = document.getElementById('result');
 
     let tailleEnM = taille / 100;
-    let tailleAuCarre = tailleEnM * tailleEnM
-    let result = poids / tailleAuCarre
-    result = result.toFixed(2)
-    return ('Votre IMC est de ' + result + '.')
-}
+    let tailleAuCarre = tailleEnM * tailleEnM;
+    let imc = poids / tailleAuCarre;
+    imc = imc.toFixed(1);
+   
+    result.textContent = imc;
 
-alert(calculImc(poids, taille));
+    });
