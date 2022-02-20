@@ -1,7 +1,7 @@
 *
 {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #333A39;
 }
 
 body{
@@ -18,6 +18,7 @@ h1{
 
 p{
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 label{
@@ -31,6 +32,12 @@ input{
 #btn{
     height: 30px;
     border-radius: 10px;
+    background-color: #F8ECA4;
+}
+
+#btn:hover{
+    background-color: whitesmoke;
+    box-shadow: 4px 3px 3px black;
 }
 
 #result{
@@ -41,6 +48,24 @@ input{
 .imc, #result{
     font-weight: bolder;
 }
+
+.tableau{
+    
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.th1{
+    
+    padding-bottom: 8%;
+}
+
+th{
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
 
 .left{
     width: 120px;
@@ -55,8 +80,4 @@ input{
     padding-left: 20px;
 }
 
-.tableau{
-    
-    display: flex;
-    justify-content: center;
-}
+
